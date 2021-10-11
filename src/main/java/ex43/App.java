@@ -38,6 +38,7 @@ public class App {
                 //if js was made
                 if(javascript == 'Y' || javascript == 'y')
                 {
+                    //add path to js
                     File jsFolder = new File(currentPath + "\\javascript");
                     boolean jsCreated = jsFolder.mkdir();
                     if(jsCreated)
@@ -46,6 +47,7 @@ public class App {
                     }
                     else
                     {
+                        //dont make one if it doesnt asks for it
                         System.out.println("Javascript folder was not made");
                     }
                 }
@@ -53,6 +55,7 @@ public class App {
                 //if css is made
                 if(css == 'Y' || css == 'y')
                 {
+                    //add path for css folder
                     File cssFolder = new File(currentPath +"\\css");
                     boolean cssCreated = cssFolder.mkdir();
                     if(cssCreated)
@@ -61,6 +64,7 @@ public class App {
                     }
                     else
                     {
+                        //dont make one if it doesnt asks for it
                         System.out.println("CSS folder was not made");
                     }
                 }

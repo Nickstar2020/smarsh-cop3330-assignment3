@@ -1,0 +1,21 @@
+@startuml
+header ex44 code flow
+
+class printProduct{
+    opens input file for .json file type.
+    * parses through the names of each product
+
+    {method} either does 1 of 2 things:
+    {method} *prints out product with its info
+    {method} *states it does not exist
+
+}
+
+class main {
+    gathers the name of the product.
+    {method} sends the name to printProduct.
+}
+
+main -[thickness=4]> printProduct : sends name
+
+@enduml

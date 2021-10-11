@@ -1,0 +1,41 @@
+package
+
+imports
+
+class {
+
+    function that outputs names to output.txt{
+        create output file
+
+        write header to output.txt
+
+        loop that keeps printing until arraylist is empty {
+            write name onto output txt
+        }
+
+        close output file
+    }
+
+    func that reads input text {
+        loop that keeps reading until line is empty {
+            put name into list
+        }
+
+        close input file
+    }
+
+    main {
+        create input from file
+
+        create string array list
+
+        takes input
+
+        sends (input) and (array list) to read func
+
+        sorts (array list)
+
+        send sorted (array list) to output func
+    }
+
+}

@@ -1,0 +1,51 @@
+@startuml
+header ex45 code flow
+
+class readFile{
+    reads the input File
+    creates an array list
+    *scans the input into the array list
+    {method} returns allWords
+}
+
+class countOccurrences{
+    takes in:
+        *allWords
+        *word
+   {method}loops through the array list and counts how many times a words has
+   {method} been in the input from the allWords list.
+
+   {method} returns count
+}
+
+class findHighestOccurrence {
+    takes in:
+    *count
+    *word
+    *word amount
+    also creates an array of the graphical visuals
+    {method} organizes the arrays from highest to lowest
+    {method} prints out the word and how many times it was contained in the input
+}
+
+class findTheWords {
+    look through all the words and pair the
+    occurrences together.
+    {method}
+}
+
+class main {
+    creates an array list that's = to readFile
+    creates a number for the amount of mods that is = to writeFile
+    {method} prints out the amount of modifications
+}
+
+
+main -[thickness=4]> readFile : sends info
+main -[thickness=4]> findTheWords : sends info
+findTheWords -[thickness=4]> findHighestOccurrence : reorders the arrays from highest to lowest occurrence
+findTheWords -[thickness=1]> countOccurrences : asks to count occurrence of a word
+countOccurrences -[thickness=1]> findTheWords : sends how many times its been counted
+
+
+@enduml

@@ -1,0 +1,80 @@
+package
+
+imports
+
+class {
+    read file function{
+        New file
+        create array list
+        
+        try to scan the input file {
+            while there is more words {
+                add word to array list
+            }
+        }   
+    }
+    
+    function that counts the amount of times a number appears(takes in word and the string array) {
+        count var
+        
+        for loop that goes until the end of the array list {
+            if the word equals the word in the array list, then ++ the count var
+        }
+        
+        return the count
+    }
+
+    function that orders the words from most occurring to least (takes in count, word, and words amount) {
+        initial vars (temps)
+        
+        for loop that loops through all words {
+            for loop that loops through all words again {
+                if the next word count is smaller than the next{
+                    create temps
+                    
+                    flip the words around in the array
+                }
+            }
+        }
+        
+        now generate the visuals in graph style
+        create string array for graph visuals
+        
+        loop through all the words {
+            loop through how many times that word occured {
+                add an "*" to the visual string
+            }
+        }
+        
+        now print the sorted graph thingy
+        for loop that loops through the amount of words {
+            print out word[i] + : + graph visual string[i]
+        }
+        
+    }
+    
+    function that finds the words (takes all the words){
+        initial vars
+        
+        for loop that loops through all the words (from input) {
+            create temp and obtain word
+            
+            for loop that loops through the created words string 
+            (this string is different from the ALLwords string b/c it only contains a single word 1 time) {
+                if the temp word is the same as any of the other words, then set "word is there" to true   
+            }
+            
+            if the word isn't in the list, then count how many times it occurs in the array list 
+            and also add it to the word string.
+            
+            set "word is there" boolean back to false and look at next word.
+        }
+        
+        now that we got all the words, now call for function that orders the words from most occurring to least.
+    }
+    
+    main {
+        make array list from read file function
+        send array list to find the words function
+    }
+}

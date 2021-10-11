@@ -1,0 +1,28 @@
+@startuml
+header ex45 code flow
+
+class readFile{
+    reads the input File
+    creates an array list
+    *scans the input into the array list
+    {method} returns the list
+}
+
+class writeFile {
+    creates a file Writer
+    *loops through the entire list
+    *changes any "utilize" to "use" in the list
+    *sends the new array list to print it out to an output file
+    {method} returns the amount of modifications
+}
+
+class main {
+    creates an array list thats = to readFile
+    creates a number for the amount of mods that is = to writeFile
+    {method} prints out the amount of modifications
+}
+
+
+main -[thickness=4]> readFile : sends info
+main -[thickness=4]> writeFile : sends info
+@enduml

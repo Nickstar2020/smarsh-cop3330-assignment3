@@ -1,0 +1,29 @@
+package
+
+imports
+
+class {
+
+    function that prints employees out (formatted) {
+        create scanner that takes file information
+
+        create header that displays (last, first names, and salary)
+
+        loop that keeps going if it has next line{
+            takes name (last and first)
+            takes salary
+            (figure out way to spilt the info from the commas ",")
+            print out info to console since it doesn't require output txt file.
+        }
+
+        close input file
+    }
+
+    main{
+        take input file in
+
+        send (input file) to function that prints employees out
+
+    }
+
+}

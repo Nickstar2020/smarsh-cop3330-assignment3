@@ -1,0 +1,21 @@
+@startuml
+header ex43 code flow
+
+class createFramework{
+    takes in all inputs from main
+    then creates a website package if its asks
+    {method} can optionally make a css and js folder
+
+}
+
+class main {
+    *takes in site name
+    *takes in creator
+    *asks if you would like a JavaScript folder
+    *asks if you would like a css folder
+    {method} takes inputs and then sends it to ->
+}
+
+
+main -[thickness=4]> createFramework : send
+@enduml

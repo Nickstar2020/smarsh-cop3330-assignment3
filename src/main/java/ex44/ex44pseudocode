@@ -1,0 +1,29 @@
+pseudocode for ex44
+
+package
+
+imports
+
+class {
+    function that prints out the data from .json {
+        create parser for .json input
+
+        try to read the file {
+            create an object that parses the data
+
+            for loop that loops through all the data {
+                checks and sees if input is inside the .json input
+
+                if it is: print out the name, price and quantity
+                if it is not: then state it does not exist in the inventory
+
+            }
+        }
+    }
+
+    main {
+        create scanner
+        ask for the product name
+        send input into the top function
+    }
+}

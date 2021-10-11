@@ -1,0 +1,47 @@
+package
+
+imports
+
+class {
+
+    function that creates the framework of the website {
+        create a string that is the path
+        create file at the path
+
+        if the website was created{
+           print out the path that was made
+
+           try making the html framework of the website {
+               make framework
+               close framework when finished
+
+               if user input asked to make js; then add a folder for js
+               else say it wasn't made
+
+               if user input asked to make css; then add folder for css
+               else say it wasn't made
+           }
+           catch if it wasn't made
+
+        }
+        else state the website folder wasn't made
+    }
+
+    main {
+        create vars
+
+        create scanner for inputs
+
+        ask for site name
+        put site name into var
+
+        ask for creator name
+        put into var
+
+        ask if they want js or css folders (y/n)
+        put answers into vars
+
+        send vars to function to create website
+
+    }
+}

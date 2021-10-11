@@ -1,0 +1,29 @@
+@startuml
+header ex41 code flow
+
+
+entity inputFile{
+*contains names
+*obtained from main
+{method} (names are unsorted)
+}
+class readNames {
+input : is input file
+ArrayList : stored names
+{method} inputs names into array
+}
+class main {
+*now contains Unsorted Array from readNames func
+{method} (names get sorted)
+}
+class outputNames{
+creates an output File that contains a head
+{method} loops through all names and prints into output
+}
+
+inputFile -[thickness=4]> readNames : goes to
+readNames -[thickness=4]> main : goes to
+main -[thickness=4]> outputNames : send sorted array to
+
+
+@enduml

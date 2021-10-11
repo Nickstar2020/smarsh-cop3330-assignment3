@@ -1,0 +1,14 @@
+@startuml
+header ex42 code flow
+
+class printEmployee{
+takes in inputFile
+{method} loops through all names and prints out organized version.
+}
+
+class inputFile {
+    contains the information to convert to a table
+}
+
+inputFile -[thickness=4]> printEmployee : goes to
+@enduml

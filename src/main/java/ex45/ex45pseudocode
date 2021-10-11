@@ -1,0 +1,47 @@
+package 45;
+
+imports
+
+class {
+    array function that reads the input file{
+        initial variables
+
+        try to while loop through all the words if possible {
+            add each word to an array list
+        }
+        close input file when done
+
+        return array list
+    }
+
+    int function that counts the amount of mods and does the modding from the string array {
+        initial vars
+
+        loop that is based of size of array list{
+            temp
+            string with word "utilize"
+
+            while loop that counts the modifications{
+                countMods++;
+            }
+            else {
+                leave the loop
+            }
+
+            actually changes the word if the word in the list is "utilize" (changes to "use")
+
+            writes the new word into the output file
+        }
+
+        close output file since finished
+
+        return the number of modifications
+    }
+
+    main {
+        ArrayList = func that reads file;
+        int mods = func that writes file(using the array list);
+
+        print out the number of mods to console
+    }
+}
